@@ -1,1 +1,2 @@
-# https://discord.gg/thugshaker
+# Thug Bot
+- https://discord.gg/thugshaker
