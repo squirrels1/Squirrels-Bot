@@ -4,7 +4,6 @@ import aiohttp
 from colorama import Fore
 from pkgutil import iter_modules
 from discord.ext import commands, tasks
-from keep_alive import keep_alive
 
 class MyBot(commands.Bot):
     def __init__(self):
@@ -38,7 +37,6 @@ class MyBot(commands.Bot):
       print(Fore.MAGENTA + "========[ " + bot.user.name + " is Online! ]========" + Fore.RESET)
       print(Fore.RED + "========[ Discord Version: " + discord.__version__ + " ]=======")
 
-keep_alive()
 bot = MyBot()
 my_secret = os.environ['TOKEN']
 bot.run(my_secret)
